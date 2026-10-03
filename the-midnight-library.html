@@ -19,6 +19,65 @@
 @media(max-width:800px){.wrap,main,.tabs{padding-inline:20px}.hero{grid-template-columns:1fr;padding-inline:20px;min-height:auto}.act a{display:none}.sec{grid-template-columns:1fr;gap:30px}.threshold,.regret-map{grid-template-columns:1fr}.threshold .door,.regret-map .arr{border-inline:0;border-block:1px solid rgba(16,42,40,.17);padding:10px}.choices{grid-template-columns:1fr 1fr}.choices:before,.choice:before{display:none}.life-row{grid-template-columns:1fr}.life-row small{text-align:left}.steps,.cheat,.reader-nav{grid-template-columns:1fr}.reader-nav button+button{text-align:left;border-left:0;border-top:1px solid rgba(16,42,40,.17);padding-left:0}.cheat div:nth-child(even){padding-left:0;border-left:0}.clock{font-size:70px}}
 @media print{body{background:white}.head,.nav{display:none}.hero-shell{background:white;color:var(--night)}.hero-copy,.author{color:var(--ink)}.clock{display:none}.panel{display:block!important}.sec{break-inside:avoid}.work{background:white;color:var(--night);border:1px solid var(--night)}.work p{color:var(--ink)}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* BOOKWORMS — production responsive layer */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:hidden}
+body{overflow-x:hidden}
+img,svg{max-width:100%;height:auto}
+button,a,input{touch-action:manipulation}
+button,a{-webkit-tap-highlight-color:transparent}
+.nav{-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav button{min-height:44px}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+@media (hover:none) and (pointer:coarse){
+  .nav button,.reader button{min-height:44px}
+  .reader button{padding:10px 4px}
+}
+@media (max-width:430px){
+  .wrap{padding-left:18px!important;padding-right:18px!important}
+  .head{height:72px!important}
+  .brand img{width:44px!important}
+  .brand b{font-size:19px!important}
+  .hero{padding-top:42px!important;padding-bottom:42px!important;min-height:auto!important}
+  h1{font-size:clamp(46px,14vw,62px)!important;line-height:.94!important}
+  h2{font-size:clamp(29px,8.5vw,36px)!important}
+  .lead,.intro{font-size:16px!important}
+  .nav{gap:20px!important}
+  .nav button{font-size:9px!important;padding-top:13px!important;padding-bottom:11px!important}
+  .panel{padding-top:44px!important;min-height:0!important}
+  .reader{gap:12px;align-items:stretch}
+  .reader button{max-width:48%;line-height:1.35;text-align:left}
+  .reader button:last-child{text-align:right}
+  .quote{font-size:21px!important}
+}
+@media (min-width:431px) and (max-width:820px){
+  .wrap{padding-left:24px!important;padding-right:24px!important}
+  .hero{min-height:auto!important;padding-top:52px!important;padding-bottom:52px!important}
+  h1{font-size:clamp(56px,10vw,76px)!important}
+  .panel{min-height:0!important}
+}
+@media (min-width:821px) and (max-width:1180px){
+  .wrap{padding-left:34px!important;padding-right:34px!important}
+  .hero{min-height:auto}
+}
+@media (min-width:1600px){
+  .wrap{max-width:1280px!important}
+}
+@media (orientation:landscape) and (max-height:650px){
+  .hero{min-height:auto!important;padding-top:40px!important;padding-bottom:40px!important}
+}
+@media print{
+  html,body{overflow:visible!important}
+  a{text-decoration:none}
+}
+
+@media (max-width:430px){
+  .intro{grid-template-columns:38px minmax(0,1fr)!important;gap:16px!important}
+  .copy{font-size:13.5px!important;line-height:1.82!important}
+  .path,.practice,.critical,.tension-grid,.merge,.nondual{max-width:100%}
+}
+
 </style></head><body>
 <div class="wrap"><header class="head"><a class="brand" href="index.html"><img src="assets/bookworms-logo.png"><b>Bookworms</b></a><div class="act"><a href="index.html">← Library</a><button class="print" onclick="print()">Print / Export PDF</button></div></header></div>
 <section class="hero-shell"><div class="clock">00:00</div><div class="hero"><div><div class="ey">Fiction · Philosophy & Life · Decisions</div><h1>The Midnight<br>Library</h1><div class="author">Matt Haig</div><div class="library"><i class="shelf"></i><i class="shelf"></i><i class="shelf"></i><i class="book b1"></i><i class="book b2"></i><i class="book b3"></i><i class="book b4"></i><i class="book b5 glow"></i><i class="book b6"></i><i class="book b7"></i><i class="book b8"></i><i class="book b9"></i><i class="book b10"></i><i class="book b11"></i></div></div><aside class="hero-copy"><div class="ey">The question behind the story</div><p>ถ้าเราสามารถเปิดหนังสือแล้วเข้าไปใช้ชีวิตที่เกิดจาก “ทางเลือกอีกทาง” ได้จริง เราจะพบชีวิตที่สมบูรณ์แบบ—หรือค้นพบว่าความเสียใจทำให้เราเข้าใจชีวิตปัจจุบันผิดไปอย่างไร?</p></aside></div></section>
